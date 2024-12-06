@@ -1,0 +1,115 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #1C1C1C, #000000);
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Container for the timer */
+#app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #151515;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    width: 300px;
+    text-align: center;
+}
+
+/* Timer display */
+#timer-display {
+    font-size: 4em;
+    margin: 20px 0;
+    position: relative;
+}
+
+/* You can enhance the timer with a circular ring:
+   This is a static style, you might dynamically adjust
+   a pseudo-element or a canvas to represent progress.
+*/
+#timer-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Add a subtle gradient or ring here: */
+    box-shadow: inset 0 0 50px rgba(255, 45, 85, 0.1);
+}
+
+/* Timer text inside the circular container */
+#timer-text {
+    font-size: 3em;
+    color: #fff;
+}
+
+/* Control buttons */
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.controls button {
+    background: #333333;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+.controls button:hover {
+    background: #444444;
+}
+
+.settings {
+    margin-top: 20px;
+    background: #1f1f1f;
+    border-radius: 10px;
+    padding: 20px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.settings h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.settings .setting-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.settings .setting-row label {
+    font-size: 0.9em;
+    color: #cccccc;
+}
+
+.settings .setting-row input {
+    width: 50px;
+    background: #000000;
+    color: #FFFFFF;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
